@@ -7,7 +7,7 @@ const createAccount = async (req, res) => {
     const user_id = token.userId.id;
 
     const file = req.file;
-
+//cloudinary 
     const result = await cloudinary.uploader.upload(file.path, {
       folder: "=Images",
     });
